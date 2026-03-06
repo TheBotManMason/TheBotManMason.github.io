@@ -1,0 +1,38 @@
+:root {
+    --header-color: #4c230a;
+    --footer-color: #280004;
+    --header-text: #ccc9a1;
+    --body-color: #a53f2b;
+    --body-text: #f0ffce;
+}
+
+@font-face {
+    font-family: 'Bulgia';
+    src: url('Bulgia.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Goda';
+    src: url('goda.personal-use.otf') format('opentype');
+}
+
+header {
+    background-color: var(--header-color);
+    font-family: 'Bulgia', serif;
+    color: var(--header-text);
+}
+
+main {
+    background-color: var(--body-color);
+    font-family: 'Cocogoose', sans-serif;
+    color: var(--body-text);
+}
+
+footer {
+    background-color: var(--footer-color);
+    font-family: 'Cocogoose', sans-serif;
+    a:link {color: var(--body-text);}
+    a:visited {color: var(--header-text);}
+}
