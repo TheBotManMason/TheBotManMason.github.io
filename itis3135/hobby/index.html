@@ -49,6 +49,24 @@
             background-color: var(--main-background-color);
             color: var(--main-text-color);
             font-family: 'Coolvetica', sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main{
+            flex: 1;
+            padding: 20px;
+        }
+
+        footer{
+            background-color: var(--footer-background-color);
+            color: var(--footer-text-color);
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            font-family: 'Sacrifice', cursive;
         }
 
         a:visited {
@@ -59,7 +77,7 @@
             color: var(--header-text-link-unvisited-color);
         }
 
-        header a {
+        a {
             font-family: 'Coolvetica', sans-serif;
             text-decoration: none;
         }
@@ -79,15 +97,18 @@
             display: block;
         }
 
+        #time-splainer{
+            width: 20em;
+        }
         
 
 
     </style>
-        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    
     </head>
     <body>
         <header>
-            <h1>Book   Binding</h1><hr>
+            <h1>Book Binding</h1><hr>
             <nav>
                 <a href="#home">Home</a> Π
                 <a href="#about_me">About Me</a> Π
@@ -101,59 +122,94 @@
         <main>
             <section id="home" class="section">
                 <h2>Home</h2>
-                <p></p>
+                <p>Hello! Welcome to my book binding page.</p>
                 <figure>
-                    <img src="" alt="" width="500">
-                    <figcaption></figcaption>
+                    <img src="images/book.jpg" alt="book" width="500">
+                    <figcaption>A custom leather bound book</figcaption>
                 </figure>
-                <p></p>
+                <p>I like to rebind books I own and bind fanfiction in to real, leatherbound books.</p>
             </section>
             <section id="about_me" class="section">
                 <h2>About Me</h2>
+                <p>My name is Mason Kuykendall, and I love to bind books. I find it very peaceful and cathartic.</p>
                 <figure>
-                    <img src="" alt="" width="500">
-                    <figcaption></figcaption>
+                    <img src="images/me.jpg" alt="Mason Kuykendall" width="500">
+                    <figcaption><em>Mason Kuykendall ie. ME</em></figcaption>
                 </figure>
-                <p></p>
+                <p>I am currently a CS student at UNC Charlotte and work at Ingles Markets. In my off time I live to do creative hobbies such as book binding, leather working, and stone carving.</p>
             </section>
             <section id="best_times" class="section">
                 <h2>Best Times</h2>
-                <figure>
-                    <img src="" alt="" width="500">
-                    <figcaption></figcaption>
-                </figure>
-                <p></p>
+                <table>
+                    <tr>
+                        <th>Day</th>
+                        <th>Time</th>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>5:00 PM - 9:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>5:00 PM - 9:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>10:00 AM - 7:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>5:00 PM - 9:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>5:00 PM - 9:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>7:00 PM - 9:00 PM</td>
+                    </tr>
+                </table>
+                <p id="time-splainer">I am usually free after work. On tuesday I am free all day and on saturday I am never free.</p>
             </section>
             <section id="where_i_do_it" class="section">
                 <h2>Where I Do It</h2>
+                <p>So where do I do my book binding hobby? Well, here in my garage of course!</p>
                 <figure>
-                    <img src="" alt="" width="500">
-                    <figcaption></figcaption>
+                    <img src="images/R.jpg" alt="Garage workshop" width="500">
+                    <figcaption><em>My garage (flickr free use)</em></figcaption>
                 </figure>
-                <p></p>
+                <p>It is big enough to house all the tools I use and have my book press.</p>
             </section>
             <section id="why_i_do_it" class="section">
                 <h2>Why I Do It</h2>
+                <p>Why do I do book binding? I do it because I find it very relaxing and rewarding. I also like to have physical copies of my favorite fanfiction. I mean just look at this Percy Jackson rebinding from Jess Less:</p>
                 <figure>
-                    <img src="" alt="" width="500">
-                    <figcaption></figcaption>
+                    <img src="images/percy-jackson-book.png" alt="Percy Jackson Book Jess Less" width="500">
+                    <figcaption><em>Percy Jackson book rebinding from Jess Less</em></figcaption>
                 </figure>
-                <p></p>
+                <p>Just seeing awesome rebindings like these just make me wait to come home from work and work on a book.</p>
             </section>
             <section id="how_i_do_it" class="section">
                 <h2>How I Do It</h2>
                 <figure>
-                    <img src="" alt="" width="500">
-                    <figcaption></figcaption>
+                    <img src="images/book-press.png" alt="Book Press" width="500">
+                    <figcaption><em>My book press (flickr free use)</em></figcaption>
                 </figure>
-                <p></p>
+                <figure>
+                    <img src="images/stamps.jpg" alt="Leather Stamps" width="500">
+                    <figcaption><em>My leather stamps</em></figcaption>
+                </figure>
+                <p>Some of the tools I use for book binding are my book press, which I use to hold the pages together while the glue dries, and my leather stamps, which I use to create decorative patterns on the book covers. I also use a needle, twine, and glue to create the spine of the book</p>
             </section>
             <section id="ai_prompts" class="section">
                 <h2>AI Prompts</h2>
-                <p>how to make sections in html on appear one at a time: how to make the sections section right (Bing -> Copilot)</p>
+                <p>Prompt: "how to make sections in html on appear one at a time: how to make the sections section right (Bing -> Copilot)"</p>
+                <p>It showed me in CSS how to detect wether a link has been clicked on and showed me how to make the sections appear one at a time.</p>
             </section>
         </main>
         <footer>
-
+            <a href="../masonkuykendall-designs.com/index.html">Click here to go to my design firm's page</a>
+            <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
         </footer>
 </html>
